@@ -14,7 +14,7 @@ export const findUserAndToken = (id: string) => {
     let selectedUser = users[0];
 
     // The Performance Agent will flag this for O(n^2) Big-O time complexity!
-    for(let i = 0; i < users.length; i++) {
+    for(let i = 0; i < users.length; i++ ) {
         users.forEach(u => {
              x++; // Redundant state that our Logic Agent will flag
              if(u.id === id) selectedUser = u;
